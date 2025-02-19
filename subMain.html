@@ -40,30 +40,39 @@
         .menu {
             height: 36px;
             background-color: rgb(212, 212, 212);
-
         }
 
         .mycards {
             width: 1200px;
             margin: 30px auto 100px auto;
-
         }
 
         .card-img {
-            height: 480px;
+            width: 380px;
+            height: 460px;
+            background-color: rgba(228, 228, 228, 0.5);
 
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+        }
+
+        .img {
+            width: 384px;
+            height: 460px;
+
+            object-fit: cover;
+
+            border-radius: 5px;
 
             -webkit-transform: scale(1);
             transform: scale(1);
             -webkit-transition: .4s ease-in-out;
-            transition: .4s ease-in-out;            
+            transition: .4s ease-in-out;
         }
 
-        .card-img:hover{
+        .img:hover {
             -webkit-transform: scale(1.1);
             transform: scale(1.1);
         }
@@ -76,7 +85,7 @@
             align-items: center;
             justify-content: center;
 
-            
+
             border-top-style: dotted;
             border-top-width: thin;
             border-top-color: gray;
@@ -116,7 +125,8 @@
                 <div class="card h-100">
                     <div class="card-img">
                         <a href="./members/member_01.html">
-                            <img src="https://www.chosun.com/resizer/v2/KJDLCO2XLFE57LP3QHWLM5TDLI.PNG?auth=03ba3ce02745ce18760eb31b117ff420ecf846083623e1709696db984083636e&width=616"
+                            <img class="img"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8M0JAiL_8rNeHAEkvTxCE3XwoAGisi0b6qg&s"
                                 class="card-img-top" alt="...">
                         </a>
                     </div>
@@ -133,7 +143,8 @@
                 <div class="card h-100">
                     <div class="card-img">
                         <a href="./members/member_02.html">
-                            <img src="https://img3.daumcdn.net/thumb/R658x0.q70/?fname=https://t1.daumcdn.net/news/202205/03/homegarden/20220503090548724vpth.jpeg"
+                            <img class="img"
+                                src="https://img3.daumcdn.net/thumb/R658x0.q70/?fname=https://t1.daumcdn.net/news/202205/03/homegarden/20220503090548724vpth.jpeg"
                                 class="card-img-top" alt="...">
                         </a>
                     </div>
@@ -150,7 +161,8 @@
                 <div class="card h-100">
                     <div class="card-img">
                         <a href="./members/member_03.html">
-                            <img src="https://images.unsplash.com/photo-1446768500601-ac47e5ec3719?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1446&q=80"
+                            <img class="img"
+                                src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140528_191%2Fsperom_1401270454442pdEMT_JPEG%2Fancient-70996_640.jpg&type=sc960_832"
                                 class="card-img-top" alt="...">
                         </a>
                     </div>
@@ -167,10 +179,11 @@
                 <div class="card h-100">
                     <div class="card-img">
                         <a href="./members/member_04.html">
-                            <img src="https://images.unsplash.com/photo-1446768500601-ac47e5ec3719?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1446&q=80"
+                            <img class="img"
+                                src="https://vmspace.com/ActiveFile/spacem.org/board_img/93160908165cac5825a093.jpg"
                                 class="card-img-top" alt="...">
                         </a>
-                    </div>                    
+                    </div>
                     <div class="card-body">
                         <h4 class="card-title">김진환</h4>
                     </div>
@@ -184,10 +197,11 @@
                 <div class="card h-100">
                     <div class="card-img">
                         <a href="./members/member_05.html">
-                            <img src="https://images.unsplash.com/photo-1446768500601-ac47e5ec3719?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1446&q=80"
+                            <img class="img"
+                                src="https://i.pinimg.com/736x/28/3f/9b/283f9bde99710e1e13ac1b5fc7a0563d.jpg"
                                 class="card-img-top" alt="...">
                         </a>
-                    </div>                    
+                    </div>
                     <div class="card-body">
                         <h4 class="card-title">최혜인</h4>
                     </div>
@@ -200,11 +214,9 @@
             <div class="col">
                 <div class="card h-100">
                     <div class="card-img">
-                        <a href="">
-                            <img src="https://images.unsplash.com/photo-1446768500601-ac47e5ec3719?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1446&q=80"
-                                class="card-img-top" alt="...">
-                        </a>
-                    </div>                    
+                        <img src="https://as2.ftcdn.net/v2/jpg/03/18/50/91/1000_F_318509134_YElOm3QDhQs7Kf5aKHFCXIiGO1wlokRD.jpg"
+                            class="card-img-top" alt="...">
+                    </div>
                     <div class="card-body">
                         <h4 class="card-title"></h4>
                     </div>
