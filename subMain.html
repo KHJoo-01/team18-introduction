@@ -103,7 +103,41 @@
 
 
         }
+
+        .guestbook {
+            width: 100%;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .post-it {
+            background-color: #fff3b0;
+            border: 1px solid #e8d484;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            text-align: left;
+        }
     </style>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('.guestbook button').addEventListener('click', function () {
+            const textarea = document.querySelector('.guestbook textarea');
+            const text = textarea.value.trim();
+            if (text !== '') {
+                const postIt = document.createElement('div');
+                postIt.className = 'post-it';
+                postIt.textContent = text;
+                document.getElementById('guestbook-posts').appendChild(postIt);
+                textarea.value = ''; // 입력 후 초기화
+            }
+        });
+    });
+</script>
+
 </head>
 
 <body>
@@ -213,20 +247,13 @@
             </div>
 
             <div class="col">
-                <div class="card h-100">
-                    <div class="card-img">
-                        <img src="https://as2.ftcdn.net/v2/jpg/03/18/50/91/1000_F_318509134_YElOm3QDhQs7Kf5aKHFCXIiGO1wlokRD.jpg"
-                            class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title"></h4>
-                    </div>
-                    <div class="card-footer">
-                        <small class="team-name">세상의 중심에서 18조를 외치다.</small>
-                    </div>
+                <div class="guestbook">
+                    <h4>방명록</h4>
+                    <textarea class="form-control mb-2" rows="3" placeholder="방명록을 남겨주세요!"></textarea>
+                    <button class="btn btn-primary">등록</button>
+                    <div id="guestbook-posts"></div>
                 </div>
             </div>
-
         </div>
     </div>
 </body>
